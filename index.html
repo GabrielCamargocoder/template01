@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 01</title>
+    
+    <link rel="stylesheet" href="estilo/desk/estilo.css">
+    <link rel="stylesheet" href="estilo/desk/estilo2.css">
+
+    <link rel="stylesheet" href="estilo/mobile/estilo.css">
+    
+    
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+</head>
+<body>
+
+    <header>
+        <div id="img-logo"><img src="imagens/logo-marca.jpg" alt=""></div>
+
+        <div class="btn-menu">
+                <i class="bi bi-list" id="btn-expand"></i>
+        </div> 
+        <nav>
+          
+            <a href="#">Cardápio</a>
+            <a href="#">Conheça-nos</a>
+            <a href="#">Contato</a>
+
+        </nav>
+
+
+        
+    </header>
+
+   <main>
+    <section class="cardapio">
+        <h1>CARDÁPIO</h1>
+        <nav class="menu-cardapio">
+            <a href="" class="link-pratos" onclick="mostrarSecao('secao1',event)">
+                <span class="icone">
+                    <img src="imagens/prato (2).png" alt="">
+                    
+                </span>
+
+                <span class="link">PRATOS</span>
+            </a>
+            
+            <a href="" class="link-saladas" onclick="mostrarSecao('secao2',event)">
+                    <span class="icone">
+                        <img src="imagens/salada (1).png" alt="">
+                    </span>
+
+                    <span class="link">SALADAS</span>
+            </a>
+
+
+            <a href="" class="link-sobremesas" onclick="mostrarSecao('secao3',event)">
+                <span class="icone">
+                
+                    <img src="imagens/sobremesa.png" alt="">
+                
+                </span>
+
+                <span class="link">SOBREMESAS</span>
+            </a>
+
+            <a href="" class="link-bebidas" onclick="mostrarSecao('secao4',event)">
+                <span class="icone">
+                    <img src="imagens/drinque-suave.png" alt="">
+                </span>
+
+                <span class="link">BEBIDAS</span>
+            </a>
+            
+        </nav>
+    
+    </section>
+    
+
+    <section class="cardapio2" id="secao1" style="display: flex;" >
+        <div class="container" id="bife">
+           
+                <img src="imagens/pratos/bife.jpg" alt="Bife" class="imagem">
+                <a href="#">
+                     
+                    <div class="txt-sobre-img">
+                        <span>BIFE</span>
+                    </div>
+                    
+                </a>
+            
+        </div>
+
+        <div class="container" id="churrasco">
+            <img src="imagens/pratos/churrasco.jpg" alt="Churrasco" class="imagem">
+            <a href="">
+                
+                <div class="txt-sobre-img">
+                
+                <span>CHURRASCO</span>
+                </div>
+            </a>
+            
+        </div>
+
+        <div class="container" id="costela">
+            <img src="imagens/pratos/costela.jpg" alt="Costela" class="imagem">
+            
+            <a href="">
+                <div class="txt-sobre-img">
+                        <span>COSTELA</span>
+                </div>
+            </a>
+           
+        </div>
+
+        <div class="container" id="frango">
+       
+            <img src="imagens/pratos/frango-grelhado.jpg" alt="Frango Grelhado" class="imagem">
+            
+            <a href="">
+                <div class="txt-sobre-img">
+                    <span>FRANGO</span>
+                </div>
+            </a>
+                       
+        </div>
+        
+       <div class="container" id="lasanha">
+       
+            <img src="imagens/pratos/lasanha.jpg" alt="Lasanha" class="imagem">
+            
+            <a href="">
+                <div class="txt-sobre-img">
+                    <span>LASANHA</span>
+                </div>
+            </a>
+
+       </div>   
+
+
+       <div class="container" id="peixe">
+       
+            <img src="imagens/pratos/peixe-grelhado.jpg" alt="peixe-grelhado" class="imagem">
+            
+            <a href="">
+                <div class="txt-sobre-img">
+                    <span>PEIXE</span>
+                </div>
+            </a>
+
+       </div>   
+
+       
+    </section>
+
+   
+
+    <!--SALADAS-->
+
+
+    <section class="cardapio2" id="secao2" style="display: none;">
+        <div class="container" id="caesar">
+           
+                <img src="imagens/salada/caesar.jpg" alt="Caesar" class="imagem">
+                <a href="#">
+                     
+                    <div class="txt-sobre-img">
+                        <span>CAESAR</span>
+                    </div>
+                    
+                </a>
+            
+        </div>
+
+        <div class="container" id="caprese">
+            <img src="imagens/salada/caprese.jpg" alt="Caprease" class="imagem">
+            <a href="">
+                
+                <div class="txt-sobre-img">
+                
+                <span>CAPREASE</span>
+                </div>
+            </a>
+            
+        </div>
+
+        <div class="container" id="classica">
+            <img src="imagens/salada/classica.jpg" alt="Classica" class="imagem">
+            
+            <a href="">
+                <div class="txt-sobre-img">
+                        <span>CLASSICA</span>
+                </div>
+            </a>
+           
+        </div>
+
+        <div class="container" id="grega">
+       
+            <img src="imagens/salada/grega.jpg" alt="Grega" class="imagem">
+            
+            <a href="">
+                <div class="txt-sobre-img">
+                    <span>GREGA</span>
+                </div>
+            </a>
+                       
+        </div>
+
+
+       
+                       
+        </div>
+    </section>
+
+
+    
+    <!--SOBREMESAS-->
+
+    <section class="cardapio2" id="secao3" style="display: none;">
+        <div class="container" id="brigadeiro">
+           
+                <img src="imagens/sobremesa/brigadeiro.jpg" alt="Brigadeiro" class="imagem">
+                <a href="#">
+                     
+                    <div class="txt-sobre-img">
+                        <span>BRIGADEIRO</span>
+                    </div>
+                    
+                </a>
+            
+        </div>
+
+        <div class="container" id="brownie">
+            <img src="imagens/sobremesa/browie.jpg" alt="Brownie" class="imagem">
+            <a href="">
+                
+                <div class="txt-sobre-img">
+                
+                <span>BROWNIE</span>
+                </div>
+            </a>
+            
+        </div>
+
+        <div class="container" id="mousse">
+            <img src="imagens/sobremesa/mousse.jpg" alt="Mousse" class="imagem">
+            
+            <a href="">
+                <div class="txt-sobre-img">
+                        <span>MOUSSE</span>
+                </div>
+            </a>
+           
+        </div>
+
+        <div class="container" id="torta-limao">
+       
+            <img src="imagens/sobremesa/torta-limao.jpg" alt="Torta de Limão" class="imagem">
+            
+            <a href="">
+                <div class="txt-sobre-img">
+                    <span>TORTA LIMÃO</span>
+                </div>
+            </a>
+                       
+        </div>
+
+    </section>
+
+
+
+    <!--BEBIDAS-->
+
+    <section class="cardapio2" id="secao4" style="display: none;">
+        <div class="container" id="coquinha-gelada">
+           
+                <img src="imagens/bebidas/refrigerante-coca.jpg" alt="Coca-Cola" class="imagem">
+                <a href="#">
+                     
+                    <div class="txt-sobre-img">
+                        <span>COCA COLA</span>
+                    </div>
+                    
+                </a>
+            
+        </div>
+
+        <div class="container" id="laranja">
+            <img src="imagens/bebidas/suco-laranja.jpg" alt="Suco de Laranja" class="imagem">
+            <a href="">
+                
+                <div class="txt-sobre-img">
+                
+                <span>SUCO LARANJA</span>
+                </div>
+            </a>
+            
+        </div>
+
+        <div class="container" id="limao">
+            <img src="imagens/bebidas/suco-limao.jpg" alt="Suco de Limão" class="imagem">
+            
+            <a href="">
+                <div class="txt-sobre-img">
+                        <span>SUCO LIMÃO</span>
+                </div>
+            </a>
+           
+        </div>
+
+        
+    </section>
+
+    </main>
+
+   
+   
+    <footer>
+
+        <p>&copy; 2025 CamargoCoder - Todos Direitos Reservados </p>
+    </footer>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
