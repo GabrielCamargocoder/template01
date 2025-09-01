@@ -12,3 +12,13 @@ function mostrarSecao(id,event){
    event.preventDefault()
 
 }
+
+const menu = getElementsByClassName('.menu-mobile')
+const btn = getElementsByClassName('btn-menu')
+
+menu.addEventListener('click', animarMenu)
+
+function animarMenu(){
+   menu.classList.toggle('abrir')
+   
+}

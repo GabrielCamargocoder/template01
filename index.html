@@ -21,9 +21,7 @@
     <header>
         <div id="img-logo"><img src="imagens/logo-marca.jpg" alt=""></div>
 
-        <div class="btn-menu">
-                <i class="bi bi-list" id="btn-expand"></i>
-        </div> 
+       
         <nav>
           
             <a href="#">Cardápio</a>
@@ -32,6 +30,13 @@
 
         </nav>
 
+         <button  onclick="animarMenu()" id="btn-menu">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+            
+
+         </button>
 
         <div class="menu-mobile">
             <nav>
@@ -338,6 +343,12 @@
     </footer>
     
     <script src="script.js"></script>
-    
+    <script>
+        function animarMenu(){
+
+            const btn = document.getElementById('btn-menu')
+            btn.classList.toggle('ativar')
+        }
+    </script>
 </body>
 </html>
