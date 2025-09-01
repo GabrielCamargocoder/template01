@@ -12,7 +12,7 @@
 }
 
 
-@media  (max-width:768px) {
+@media  (max-width:767px) {
     
 
 
@@ -175,8 +175,10 @@ button.ativar .linha:nth-child(2){
     top: 120px;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 0;
     visibility: hidden;
+    transition: .5s ;
+    overflow: hidden;
     
 }
 #menu-mobile > nav > a{
@@ -202,6 +204,7 @@ button.ativar .linha:nth-child(2){
 
 #menu-mobile.abrir{
    visibility: visible;
+   height: 100vh;
 }
 
 main{

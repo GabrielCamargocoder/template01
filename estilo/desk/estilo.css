@@ -112,11 +112,20 @@ main{
     
 }
 
+#menu-mobile{
+    display: none;
+}
+
+#btn-menu{
+    display: none;
+}
+
+/*MENU CARDAPIO*/
 .cardapio> h1{
 
     text-align: center;
     margin-bottom: 80px;
-    font-size: 60pt;
+    font-size: 50pt;
     font-family: 'storm';
     color:rgb(152, 9, 9) ;
 }
@@ -124,9 +133,9 @@ main{
 .menu-cardapio{
    
     margin: auto;
-    max-width: 1240px;
+    width: 80vw;
     text-align: center;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
     
    
 }
@@ -134,7 +143,7 @@ main{
 .menu-cardapio > a{
 
     text-decoration: none;
-    margin-left: 10px;
+    
     padding: 15px;
     
 }
@@ -144,9 +153,9 @@ main{
 .menu-cardapio > a.link-pratos{
     font-family:'Ruby' ;
     color: white;
-    font-size: 20pt;
+    font-size: 18pt;
     
-    margin-right: 30px;
+    
     margin-bottom: 40px;
 }   
 
@@ -163,7 +172,7 @@ main{
    
    
     margin-right: 6px;
-    height: 30px;
+    height: 25px;
   
     transition: all, 0.2s;
 }
@@ -183,9 +192,9 @@ main{
 .menu-cardapio > a.link-saladas{
     font-family:'Ruby' ;
     color: white;
-    font-size: 20pt;
+    font-size: 18pt;
     
-    margin-right: 30px;
+  
     margin-bottom: 40px;
 }   
 
@@ -202,7 +211,7 @@ main{
    
    
     margin-right: 6px;
-    height: 30px;
+    height: 25px;
     
  
     transition: all, 0.3s;
@@ -221,9 +230,9 @@ main{
 .menu-cardapio > a.link-sobremesas{
     font-family:'Ruby' ;
     color: white;
-    font-size: 20pt;
+    font-size: 18pt;
     
-    margin-right: 30px;
+ 
     margin-bottom: 40px;
 }   
 
@@ -240,7 +249,7 @@ main{
    
    
     margin-right: 6px;
-    height: 30px;
+    height: 25px;
     
    
     transition: all, 0.3s;
@@ -259,9 +268,9 @@ main{
 .menu-cardapio > a.link-bebidas{
     font-family:'Ruby' ;
     color: white;
-    font-size: 20pt;
+    font-size: 18pt;
     
-    margin-right: 30px;
+    
     margin-bottom: 40px;
 }   
 
@@ -278,7 +287,7 @@ main{
    
    
     margin-right: 4px;
-    height: 30px;
+    height: 25px;
     
     transition: all, 0.3s;
 }
@@ -291,19 +300,19 @@ main{
    
 }
 
-
+/*CARDAPIO*/
 
 section.cardapio2{
 
     
     margin: auto;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
     justify-items: center;
 
     
-    width: 90vw;
+   max-width: 800px;
         
 }
 
@@ -317,7 +326,7 @@ section.cardapio2{
 
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20pt;
+    font-size: 16pt;
     font-weight: bold;
     position: absolute;
     width: 100%;
@@ -339,9 +348,9 @@ section.cardapio2{
 
     position: relative;
     display: inline-block;
-    height: 180px;
+    height: 140px;
     margin-bottom: 40px;
-    margin-right: 40px;
+    margin-right: 10px;
     overflow: hidden;
 
 }
@@ -373,7 +382,7 @@ section.cardapio2{
 
 .container > img{
 
-    height: 180px;
+    height: 140px;
     margin-bottom: 40px;
     border-radius: 5px;
     object-fit: cover;

@@ -12,7 +12,7 @@
 }
 
 
-@media  (min-width:1200px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
     
 
 
@@ -46,7 +46,7 @@ header{
 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
 }
@@ -55,14 +55,26 @@ header{
 
 header>div#img-logo>img{
 
-    height: 145px;
-    width: 300px;
+   height: 120px;
+   margin-left: 15px;
+   
+}
+
+
+
+header>.btn-menu > i{
+   
+    color:white;
+    font-size: 30pt;
     padding: 10px;
+    display: none;
+   
 }
 
 header>nav{
 
-    width: 600px;
+    width:600px;
+    display: none;
     
 }
 
@@ -70,10 +82,10 @@ header > nav >a{
     display: inline-block;
     color: white;
     text-decoration: none;
-    margin-left: 30px;
-    margin-right: 40px;
+    margin-left: 10px;
+    margin-right: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16pt;
+    font-size: 12pt;
     position: relative;
     
 }
@@ -105,6 +117,100 @@ header > nav> a:hover{
         
 }
 
+/*MENU - HAMBURGUINHO*/
+
+button#btn-menu{
+
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+button#btn-menu > .linha{
+
+    width: 40px;
+    height: 3px;
+    margin: 10px auto;
+    background-color: white;
+    display: block;
+    position: relative;
+    transform-origin: center;
+    transition: 0.2s;
+
+}
+
+
+
+button.ativar .linha:nth-child(1){
+
+    
+    transform: translateY(13px) rotate(-45deg);
+    
+}
+
+button.ativar .linha:nth-child(3){
+
+    
+    transform: translateY(-13px) rotate(45deg);
+    
+}
+
+button.ativar .linha:nth-child(2){
+
+    opacity: 0;
+}
+/*MENU MOBILE*/
+
+
+
+
+#menu-mobile{
+
+    background-color: #282828b5;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    top: 120px;
+    left: 0;
+    width: 100vw;
+    height: 0;
+    visibility: hidden;
+    transition: .5s ;
+    overflow: hidden;
+    
+}
+#menu-mobile > nav > a{
+
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 16pt;
+    display: block;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    transition: 0.3s;
+
+}
+
+#menu-mobile > nav > a:hover{
+
+    background-color:rgba(255, 255, 255, 0.348);
+    
+    color: black;
+}
+
+#menu-mobile.abrir{
+   visibility: visible;
+   height: 100vh;
+}
+
+
+
+
 main{
 
     margin: auto;
@@ -112,19 +218,22 @@ main{
     
 }
 
+/*MENU 1*/
+
 .cardapio> h1{
 
     text-align: center;
     margin-bottom: 80px;
-    font-size: 60pt;
+    font-size: 50pt;
     font-family: 'storm';
     color:rgb(152, 9, 9) ;
 }
 
 .menu-cardapio{
-   
+    display: flex;
     margin: auto;
-    max-width: 1240px;
+    justify-content: space-around;
+    flex-flow: row wrap;
     text-align: center;
     margin-bottom: 120px;
     
@@ -135,7 +244,7 @@ main{
 
     text-decoration: none;
     margin-left: 10px;
-    padding: 15px;
+    padding: 10px;
     
 }
 
@@ -144,10 +253,9 @@ main{
 .menu-cardapio > a.link-pratos{
     font-family:'Ruby' ;
     color: white;
-    font-size: 20pt;
+    font-size: 18pt;
     
-    margin-right: 30px;
-    margin-bottom: 40px;
+    
 }   
 
 .menu-cardapio >a.link-pratos:hover{
@@ -163,7 +271,8 @@ main{
    
    
     margin-right: 6px;
-    height: 30px;
+    margin-bottom: 10px;
+    height: 40px;
   
     transition: all, 0.2s;
 }
@@ -173,20 +282,23 @@ main{
     
     filter:sepia(2000%) saturate(3000%) hue-rotate(-40deg) brightness(80%);
     
-
-    
-   
 }
+
+.menu-cardapio > a.link-pratos > .link{
+
+    display: block;
+}
+
+
 
 /*LINK-SALADAS*/
 
 .menu-cardapio > a.link-saladas{
     font-family:'Ruby' ;
     color: white;
-    font-size: 20pt;
+    font-size: 18pt;
     
-    margin-right: 30px;
-    margin-bottom: 40px;
+    
 }   
 
 .menu-cardapio >a.link-saladas:hover{
@@ -202,7 +314,8 @@ main{
    
    
     margin-right: 6px;
-    height: 30px;
+    margin-bottom: 10px;
+    height: 40px;
     
  
     transition: all, 0.3s;
@@ -216,15 +329,19 @@ main{
    
 }
 
+.menu-cardapio > a.link-saladas > .link{
+
+    display: block;
+}
+
 /*LINK SOBREMESAS*/ 
 
 .menu-cardapio > a.link-sobremesas{
     font-family:'Ruby' ;
     color: white;
-    font-size: 20pt;
+    font-size: 18pt;
     
-    margin-right: 30px;
-    margin-bottom: 40px;
+   
 }   
 
 .menu-cardapio >a.link-sobremesas:hover{
@@ -240,10 +357,16 @@ main{
    
    
     margin-right: 6px;
-    height: 30px;
+    margin-bottom: 10px;
+    height: 40px;
     
    
     transition: all, 0.3s;
+}
+
+.menu-cardapio > a.link-sobremesas > .link{
+
+    display: block;
 }
 
 .menu-cardapio > a.link-sobremesas:hover .icone>img{
@@ -259,10 +382,9 @@ main{
 .menu-cardapio > a.link-bebidas{
     font-family:'Ruby' ;
     color: white;
-    font-size: 20pt;
+    font-size: 18pt;
     
-    margin-right: 30px;
-    margin-bottom: 40px;
+    
 }   
 
 .menu-cardapio >a.link-bebidas:hover{
@@ -278,7 +400,8 @@ main{
    
    
     margin-right: 4px;
-    height: 30px;
+    margin-bottom: 10px;
+    height: 40px;
     
     transition: all, 0.3s;
 }
@@ -291,37 +414,48 @@ main{
    
 }
 
+.menu-cardapio > a.link-bebidas > .link{
 
+    display: block;
+}
+
+
+/*CARDAPIO*/
 
 section.cardapio2{
 
     
     margin: auto;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
+    justify-items: center;
 
     
-    max-width: 1400px;
-    
-
-    
+    width: 80vw;
+        
 }
+
+
+
+
+
+
 
 .cardapio2 >  .container> a >.txt-sobre-img >span{
 
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20pt;
+    font-size: 14pt;
     font-weight: bold;
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 40%;
+    top: 50%;
     left: 50%;
-    padding: 80px;
+    padding: 40px;
     
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -50%);
 }
 
 .cardapio2> .container > a > .txt-sobre-img> span{
@@ -334,9 +468,9 @@ section.cardapio2{
 
     position: relative;
     display: inline-block;
-    height: 280px;
+    height: 180px;
     margin-bottom: 40px;
-    margin-right: 40px;
+    
     overflow: hidden;
 
 }
@@ -368,7 +502,7 @@ section.cardapio2{
 
 .container > img{
 
-    height: 280px;
+    height: 180px;
     margin-bottom: 40px;
     border-radius: 5px;
     object-fit: cover;
@@ -396,11 +530,16 @@ section.cardapio2{
 }
 
 
+/*BEBIDAS*/
 
+.cardapio2 > #secao4{
 
+    
+}
 
 
 }
+
 
 
 
