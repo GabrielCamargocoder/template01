@@ -66,13 +66,14 @@ header>.btn-menu > i{
     color:white;
     font-size: 30pt;
     padding: 10px;
+    display: none;
    
 }
 
 header>nav{
 
     width:600px;
-    display: block;
+    display: none;
     
 }
 
@@ -115,6 +116,19 @@ header > nav> a:hover{
         
 }
 
+.menu-mobile{
+
+    background-color: #282828b5;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    top: 120px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.menu-
 
 
 main{
