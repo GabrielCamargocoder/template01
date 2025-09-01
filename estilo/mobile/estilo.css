@@ -167,7 +167,7 @@ button.ativar .linha:nth-child(2){
 
 
 
-.menu-mobile{
+#menu-mobile{
 
     background-color: #282828b5;
     position: fixed;
@@ -179,8 +179,7 @@ button.ativar .linha:nth-child(2){
     visibility: hidden;
     
 }
-
-.menu-mobile > nav > a{
+#menu-mobile > nav > a{
 
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -194,16 +193,15 @@ button.ativar .linha:nth-child(2){
 
 }
 
-.menu-mobile > nav > a:hover{
+#menu-mobile > nav > a:hover{
 
     background-color:rgba(255, 255, 255, 0.348);
     
     color: black;
 }
 
-.menu-mobile.abrir{
-
-    visibility: visible;
+#menu-mobile.abrir{
+   visibility: visible;
 }
 
 main{
@@ -517,10 +515,8 @@ section.cardapio2{
 
 
 
-
-
-
 }
+
 
 
 
