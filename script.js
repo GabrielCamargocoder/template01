@@ -14,7 +14,7 @@ function mostrarSecao(id,event){
 }
 
 const menu = getElementsByClassName('.menu-mobile')
-const btn = getElementsByClassName('btn-menu')
+
 
 menu.addEventListener('click', animarMenu)
 

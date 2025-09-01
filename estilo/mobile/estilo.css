@@ -201,6 +201,10 @@ button.ativar .linha:nth-child(2){
     color: black;
 }
 
+.menu-mobile.abrir{
+
+    visibility: visible;
+}
 
 main{
 
