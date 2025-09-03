@@ -11,6 +11,11 @@
     src: url(../../fontes/RubikStorm-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'lione';
+    src: url(../../fontes/LeckerliOne-Regular.ttf);
+}
+
 
 @media screen and (min-width:768px) and (max-width:1023px) {
     
@@ -36,7 +41,7 @@ body{
 
 header{
     
-    background-color: rgb(110, 18, 18);
+    background-color:#432c24;
     height: 120px;
     position: fixed;
     top: 0px;
@@ -214,20 +219,51 @@ button.ativar .linha:nth-child(2){
 main{
 
     margin: auto;
-    margin-top: 180px;
+    margin-top: 120px;
     
 }
 
+
+
 /*MENU 1*/
 
-.cardapio> h1{
+.cardapio{
+
+    background: url(../../imagens/img-section-1.jpg) no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    
+}
+
+.cardapio > .blur{
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.491);
+    backdrop-filter: blur(2px);
+}
+
+.cardapio > .blur > #container{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+}
+
+
+.cardapio>.blur>#container h1{
 
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     font-size: 50pt;
-    font-family: 'storm';
-    color:rgb(152, 9, 9) ;
+    font-family: 'lione';
+    color:#ba744b ;
 }
+
+
 
 .menu-cardapio{
     display: flex;
@@ -236,6 +272,7 @@ main{
     flex-flow: row wrap;
     text-align: center;
     margin-bottom: 120px;
+    width: 700px;
     
    
 }
@@ -426,6 +463,7 @@ section.cardapio2{
 
     
     margin: auto;
+    margin-top: 80px;
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
