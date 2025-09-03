@@ -187,7 +187,7 @@ main{
 
 .menu-cardapio > a >span{
 
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 
@@ -352,19 +352,27 @@ section.cardapio2{
     
     margin: auto;
     margin-top: 120px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
     justify-items: center;
 
     
-   max-width: 1300px;
+   max-width: 1320px;
         
 }
 
+section.cardapio2#secao2{
 
+    
+    max-width: 1320px;
+    
+}
 
+.cardapio2#secao3{
 
+    max-width: 1320px;
+}
 
 
 
@@ -465,13 +473,13 @@ section.cardapio2#secao4{
     
     margin: auto;
     margin-top: 120px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
     justify-items: center;
 
     
-    max-width: 1300px;
+    max-width: 960px;
         
 }
 
