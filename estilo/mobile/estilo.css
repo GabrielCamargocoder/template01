@@ -36,7 +36,7 @@
 
 body{
 
-    background-color: #201816;
+    background-color:#201816;
 
 }
 
@@ -224,7 +224,7 @@ main{
 
     background: url(../../imagens/img-section-1.jpg) no-repeat center center;
     background-size: cover;
-    height: 360px;
+    height: 400px;
     position: relative;
     
 }
@@ -459,10 +459,6 @@ section.cardapio2{
 
 
 
-
-
-
-
 .cardapio2 >  .container> a >.txt-sobre-img >span{
 
     color: white;
@@ -489,7 +485,7 @@ section.cardapio2{
 
     position: relative;
     display: inline-block;
-    height: 180px;
+    height: 200px;
     margin-bottom: 40px;
    
     overflow: hidden;
@@ -523,7 +519,7 @@ section.cardapio2{
 
 .container > img{
 
-    height: 180px;
+    height: 200px;
     margin-bottom: 40px;
     border-radius: 5px;
     object-fit: cover;
