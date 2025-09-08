@@ -27,11 +27,7 @@
     box-sizing: border-box;
 }
 
-.rubik-dirt-regular {
-  font-family: "Rubik Dirt", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
+
 
 body{
 
@@ -134,7 +130,7 @@ main{
     background: url(../../imagens/img-section-1.jpg) no-repeat center center;
     background-size: cover;
     height: 400px;
-    margin-top: 120px;
+    margin-top: 130px;
     position: relative;
     
 }
@@ -407,6 +403,7 @@ section.cardapio2#secao2{
     display: inline-block;
     height: 300px;
     margin-bottom: 10px;
+    margin-right: 10px;
     
     overflow: hidden;
 
@@ -433,7 +430,7 @@ section.cardapio2#secao2{
 .container:hover  .txt-sobre-img{
 
     opacity: 1;
-    animation: zoom .3s ease-in-out;
+    animation: zoom .4s ease-in-out;
    
 }
 

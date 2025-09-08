@@ -1,0 +1,218 @@
+@charset 'UTF-8';
+
+
+
+
+
+@font-face {
+    font-family: 'titulo';
+    src: url(../../fontes/Handlee-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'ruby';
+    src: url(../../fontes/RubikDirt-Regular.ttf);
+}
+
+@media  (min-width:1024px) {
+    
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.rubik-dirt-regular {
+  font-family: "Rubik Dirt", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+
+    background-color: #201816;
+    
+    
+
+}
+
+header{
+    
+    background-color: #332013;
+    height: 130px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+
+header>div#img-logo>img{
+
+    height: 140px;
+   
+    padding: 10px;
+}
+
+header>nav{
+
+    width: 600px;
+    
+}
+
+header > nav >a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    position: relative;
+    
+}
+
+header > nav > a::after{
+
+    content: '';
+    position: absolute;
+    top: 25px;
+    left:0;
+    width: 0;
+    height: 1px;
+    background-color:#ba744b;
+    transition: .3s;
+    
+}
+
+header > nav > a:hover::after{
+
+    width: 100%;
+    
+}
+
+header > nav> a:hover{
+
+    color: #ba744b;
+    transition: .3s;
+    
+        
+}
+
+
+
+#menu-mobile{
+    display: none;
+}
+
+#btn-menu{
+    display: none;
+}
+
+/*BACKGROUND*/
+
+.back{
+
+    background: url(../../imagens/img-section-1.jpg) no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    margin-top: 130px;
+    position: relative;
+}
+
+div.vidro{
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.509);
+    backdrop-filter: blur(2px);
+    z-index: 1;
+}
+
+.back > .titulo-desc{
+
+    width: 70vw;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.back > .titulo-desc > h1{
+
+    color: white;
+    font-size: 80pt;
+    text-align: center;
+    font-family:'titulo';
+    font-weight: 200px;
+    
+}
+
+/*DESCRICAO*/
+
+.descricao{
+
+    width: 85vw;
+    
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
+
+.descricao > .img-desc > img{
+
+    
+    height: 400px;
+   
+   
+}
+
+.descricao > .txt-desc{
+
+ 
+    margin-top:-12px;
+    width: 40vw;
+
+}
+
+.descricao > .txt-desc > .titulo{
+
+  
+    font-size: 40pt;
+    color: #ba744b;
+    font-family: 'ruby';
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.descricao > .txt-desc > .desc-produto{
+
+    color: white;
+    font-size: 20pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+}
+
+
+
+
+
+
+
