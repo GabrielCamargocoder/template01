@@ -403,7 +403,7 @@ section.cardapio2#secao2{
 
     position: relative;
     display: inline-block;
-    height: 280px;
+    height: 260px;
     margin-bottom: 20px;
     margin-right: 10px;
     overflow: hidden;
@@ -437,7 +437,7 @@ section.cardapio2#secao2{
 
 .container > img{
 
-    height: 280px;
+    height: 260px;
     margin-bottom: 40px;
     border-radius: 5px;
     object-fit: cover;
