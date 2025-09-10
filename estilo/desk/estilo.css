@@ -17,7 +17,7 @@
 }
 
 
-@media  (min-width:1024px) and (max-width:1400px) {
+@media  (min-width:1023px){
     
 
 
@@ -115,6 +115,7 @@ main{
 
     margin: auto;
     margin-top: 160px;
+    margin-bottom: 60px;
     
 }
 
@@ -353,6 +354,7 @@ section.cardapio2{
     
     margin: auto;
     margin-top: 120px;
+    margin-bottom: 120px;
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
@@ -474,16 +476,97 @@ section.cardapio2#secao4{
     
     margin: auto;
     margin-top: 120px;
-    justify-content: space-between;
+    margin-bottom: 120px;
+    justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
     justify-items: center;
 
     
-    max-width: 960px;
+    
         
 }
 
+/*FOOTER*/
+
+.interface{
+
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #191413;
+    
+    
+}
+
+
+
+
+.linha{
+    
+    padding: 10px;
+}
+
+.linha > h3{
+
+    font-family: 'lione';
+    font-weight: normal;
+    color: #59341b;
+    font-size: 40pt;
+}
+
+.linha > .links > a{
+    display: flex;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 20pt;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.2s ease-in-out;
+}
+
+.linha > .links > a:hover{
+
+    color: #754424;
+}
+
+.redes{
+
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.linha > .redes > a .link-rede  {
+
+    
+    padding: 15px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 32pt;
+    margin-right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.2s ease-in-out;
+}
+
+.linha > .redes > a> span:hover{
+
+    color: #754424;
+
+}
+
+.linha#linha4{
+
+    text-align: center;
+    background-color: #332013;
+    color: white;
+    font-size: 16pt;
+    font-weight: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 35px;
+}
 
 }
 

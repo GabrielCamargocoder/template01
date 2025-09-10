@@ -14,13 +14,7 @@
     src: url(../../fontes/RubikDirt-Regular.ttf);
 }
 
-@font-face {
-    font-family: 'lione';
-    src: url(../../fontes/LeckerliOne-Regular.ttf);
-}
-
-
-@media  (min-width:1023px) {
+@media  (min-width:768px) and (max-width:1023px){
     
 
 
@@ -30,11 +24,7 @@
     box-sizing: border-box;
 }
 
-.rubik-dirt-regular {
-  font-family: "Rubik Dirt", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
+
 
 body{
 
@@ -47,7 +37,7 @@ body{
 header{
     
     background-color: #332013;
-    height: 160px;
+    height: 120px;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -56,7 +46,7 @@ header{
 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
 }
@@ -65,14 +55,25 @@ header{
 
 header>div#img-logo>img{
 
-    height: 160px;
+   height: 120px;
    
+}
+
+
+
+header>.btn-menu > i{
+   
+    color:white;
+    font-size: 30pt;
     padding: 10px;
+    display: none;
+   
 }
 
 header>nav{
 
-    width: 600px;
+    width:600px;
+    display: none;
     
 }
 
@@ -80,10 +81,10 @@ header > nav >a{
     display: inline-block;
     color: white;
     text-decoration: none;
-    margin-left: 30px;
-    margin-right: 40px;
+    margin-left: 10px;
+    margin-right: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20pt;
+    font-size: 12pt;
     position: relative;
     
 }
@@ -96,7 +97,7 @@ header > nav > a::after{
     left:0;
     width: 0;
     height: 1px;
-    background-color:#ba744b;
+    background-color: yellow;
     transition: .3s;
     
 }
@@ -109,27 +110,105 @@ header > nav > a:hover::after{
 
 header > nav> a:hover{
 
-    color: #ba744b;
+    color: yellow;
     transition: .3s;
     
         
 }
 
-main{
+/*MENU - HAMBURGUINHO*/
 
-    margin: auto;
-    margin-top: 130px;
-    margin-bottom: 60px;
+button#btn-menu{
+
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+button#btn-menu > .linha{
+
+    width: 40px;
+    height: 3px;
+    margin: 10px auto;
+    background-color: white;
+    display: block;
+    position: relative;
+    transform-origin: center;
+    transition: 0.2s;
+
+}
+
+
+
+button.ativar .linha:nth-child(1){
+
+    
+    transform: translateY(13px) rotate(-45deg);
     
 }
 
+button.ativar .linha:nth-child(3){
 
-#menu-mobile{
-    display: none;
+    
+    transform: translateY(-13px) rotate(45deg);
+    
 }
 
-#btn-menu{
-    display: none;
+button.ativar .linha:nth-child(2){
+
+    opacity: 0;
+}
+
+
+/*MENU MOBILE*/
+
+
+
+
+#menu-mobile{
+
+    background-color: #282828b5;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    top: 120px;
+    left: 0;
+    width: 100vw;
+    height: 0;
+    visibility: hidden;
+    transition: .5s ;
+    overflow: hidden;
+    
+}
+#menu-mobile > nav > a{
+
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 16pt;
+    display: block;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    transition: 0.3s;
+
+}
+
+/*MENU MOBILE*/
+
+#menu-mobile > nav > a:hover{
+
+    background-color:rgba(255, 255, 255, 0.348);
+    
+    color: black;
+}
+
+#menu-mobile.abrir{
+   visibility: visible;
+   height: 100vh;
 }
 
 /*BACKGROUND*/
@@ -138,8 +217,8 @@ main{
 
     background: url(../../imagens/img-section-1.jpg) no-repeat center center;
     background-size: cover;
-    height: 400px;
-  
+    height: 360px;
+   
     position: relative;
 }
 
@@ -152,21 +231,20 @@ div.vidro{
     z-index: 1;
 }
 
-
 .back > .titulo-desc{
 
-    width: 70vw;
+    width: 100vw;
     height: 120px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,0%);
 }
 
 .back > .titulo-desc > h1{
 
     color: white;
-    font-size: 60pt;
+    font-size: 40pt;
     text-align: center;
     font-family:'titulo';
     font-weight: 200px;
@@ -177,22 +255,30 @@ div.vidro{
 
 .descricao{
 
-    width: 80vw;
+    width: 100vw;
     
     margin: auto;
-    margin-top: 120px;
+    margin-top: 60px;
     margin-bottom: 100px;
     position: relative;
     display: flex;
-    flex-flow: row wrap;
+    align-items: center;
+    flex-flow: row wrap-reverse;
     justify-content: space-between;
     
 }
 
-.descricao > .img-desc > img{
+.descricao > .img-desc{
+    margin: auto;
+    margin-top: 80px;
+    height: 260px;
+}
 
+.descricao > .img-desc > img{
+  
     
-    height: 360px;
+    height: 260px;
+    
    
    
 }
@@ -201,27 +287,27 @@ div.vidro{
 
  
     margin-top:-12px;
-    width: 40vw;
+    width: 100vw;
 
 }
 
 .descricao > .txt-desc > .titulo{
 
-  
-    font-size: 60pt;
+    text-align: center;
+    font-size: 40pt;
     color: #ba744b;
     font-family: 'ruby';
     font-weight: normal;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .descricao > .txt-desc > .desc-produto{
 
     color: white;
     font-size: 20pt;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 
 /*FOOTER*/
 
@@ -239,7 +325,7 @@ div.vidro{
 
 
 
-.linha{
+footer >.linha{
     
     padding: 10px;
 }
@@ -249,7 +335,7 @@ div.vidro{
     font-family: 'lione';
     font-weight: normal;
     color: #59341b;
-    font-size: 40pt;
+    font-size: 20pt;
 }
 
 .linha > .links > a{
@@ -257,7 +343,7 @@ div.vidro{
     padding: 15px;
     color: white;
     text-decoration: none;
-    font-size: 20pt;
+    font-size: 16pt;
     font-family: Arial, Helvetica, sans-serif;
     transition: 0.2s ease-in-out;
 }
@@ -281,8 +367,8 @@ div.vidro{
     text-align: center;
     color: white;
     text-decoration: none;
-    font-size: 32pt;
-    margin-right: 15px;
+    font-size: 22pt;
+   
     font-family: Arial, Helvetica, sans-serif;
     transition: 0.2s ease-in-out;
 }
@@ -298,11 +384,12 @@ div.vidro{
     text-align: center;
     background-color: #332013;
     color: white;
-    font-size: 16pt;
+    font-size: 14pt;
     font-weight: 200px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 35px;
 }
+
 
 }
 
