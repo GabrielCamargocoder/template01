@@ -547,7 +547,93 @@ section.cardapio2{
 }
 
 
-/*BEBIDAS*/
+/*FOOTER*/
+
+.interface{
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #191413;
+    
+    
+}
+
+
+
+
+footer >.linha{
+    
+    padding: 10px;
+    width: 100vw;
+    margin-bottom: 20px;
+    
+}
+
+.linha > h3{
+    text-align: center;
+    margin-top: 12px;
+    font-family: 'lione';
+    font-weight: normal;
+    color: #59341b;
+    font-size: 20pt;
+}
+
+.linha > .links > a{
+    display: flex;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.2s ease-in-out;
+}
+
+.linha > .links > a:hover{
+
+    color: #754424;
+}
+
+.redes{
+
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.linha > .redes > a .link-rede  {
+
+    
+    padding: 15px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 22pt;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.2s ease-in-out;
+}
+
+.linha > .redes > a> span:hover{
+
+    color: #754424;
+
+}
+
+.linha#linha4{
+
+    text-align: center;
+    background-color: #332013;
+    color: white;
+    font-size: 14pt;
+    font-weight: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 35px;
+}
 
 
 
