@@ -19,7 +19,8 @@
     src: url(../../fontes/LeckerliOne-Regular.ttf);
 }
 
-@media  (max-width:767px) {
+
+@media screen and (min-width:1023px) {
     
 
 
@@ -29,7 +30,11 @@
     box-sizing: border-box;
 }
 
-
+.rubik-dirt-regular {
+  font-family: "Rubik Dirt", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
 body{
 
@@ -42,7 +47,7 @@ body{
 header{
     
     background-color: #332013;
-    height: 120px;
+    height: 160px;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -51,7 +56,7 @@ header{
 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
 }
@@ -60,25 +65,14 @@ header{
 
 header>div#img-logo>img{
 
-   height: 120px;
+    height: 160px;
    
-}
-
-
-
-header>.btn-menu > i{
-   
-    color:white;
-    font-size: 30pt;
     padding: 10px;
-    display: none;
-   
 }
 
 header>nav{
 
-    width:600px;
-    display: none;
+    width: 600px;
     
 }
 
@@ -86,10 +80,10 @@ header > nav >a{
     display: inline-block;
     color: white;
     text-decoration: none;
-    margin-left: 10px;
-    margin-right: 20px;
+    margin-left: 30px;
+    margin-right: 40px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12pt;
+    font-size: 20pt;
     position: relative;
     
 }
@@ -102,7 +96,7 @@ header > nav > a::after{
     left:0;
     width: 0;
     height: 1px;
-    background-color: yellow;
+    background-color:#ba744b;
     transition: .3s;
     
 }
@@ -115,105 +109,27 @@ header > nav > a:hover::after{
 
 header > nav> a:hover{
 
-    color: yellow;
+    color: #ba744b;
     transition: .3s;
     
         
 }
 
-/*MENU - HAMBURGUINHO*/
+main{
 
-button#btn-menu{
-
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    cursor: pointer;
-}
-
-button#btn-menu > .linha{
-
-    width: 40px;
-    height: 3px;
-    margin: 10px auto;
-    background-color: white;
-    display: block;
-    position: relative;
-    transform-origin: center;
-    transition: 0.2s;
-
-}
-
-
-
-button.ativar .linha:nth-child(1){
-
-    
-    transform: translateY(13px) rotate(-45deg);
+    margin: auto;
+    margin-top: 130px;
+    margin-bottom: 60px;
     
 }
-
-button.ativar .linha:nth-child(3){
-
-    
-    transform: translateY(-13px) rotate(45deg);
-    
-}
-
-button.ativar .linha:nth-child(2){
-
-    opacity: 0;
-}
-
-
-/*MENU MOBILE*/
-
-
 
 
 #menu-mobile{
-
-    background-color: #282828b5;
-    position: fixed;
-    backdrop-filter: blur(10px);
-    top: 120px;
-    left: 0;
-    width: 100vw;
-    height: 0;
-    visibility: hidden;
-    transition: .5s ;
-    overflow: hidden;
-    
-}
-#menu-mobile > nav > a{
-
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 16pt;
-    display: block;
-    padding: 20px 30px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    transition: 0.3s;
-
+    display: none;
 }
 
-/*MENU MOBILE*/
-
-#menu-mobile > nav > a:hover{
-
-    background-color:rgba(255, 255, 255, 0.348);
-    
-    color: black;
-}
-
-#menu-mobile.abrir{
-   visibility: visible;
-   height: 100vh;
+#btn-menu{
+    display: none;
 }
 
 /*BACKGROUND*/
@@ -222,8 +138,8 @@ button.ativar .linha:nth-child(2){
 
     background: url(../../imagens/img-section-1.jpg) no-repeat center center;
     background-size: cover;
-    height: 360px;
-   
+    height: 400px;
+  
     position: relative;
 }
 
@@ -236,20 +152,21 @@ div.vidro{
     z-index: 1;
 }
 
+
 .back > .titulo-desc{
 
-    width: 100vw;
+    width: 70vw;
     height: 120px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,0%);
+    transform: translate(-50%,-50%);
 }
 
 .back > .titulo-desc > h1{
 
     color: white;
-    font-size: 40pt;
+    font-size: 60pt;
     text-align: center;
     font-family:'titulo';
     font-weight: 200px;
@@ -260,30 +177,22 @@ div.vidro{
 
 .descricao{
 
-    width: 100vw;
+   width: 90vw;
     
     margin: auto;
-    margin-top: 60px;
+    margin-top: 120px;
     margin-bottom: 100px;
     position: relative;
     display: flex;
-    align-items: center;
-    flex-flow: row wrap-reverse;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: space-around;
     
-}
-
-.descricao > .img-desc{
-    margin: auto;
-    margin-top: 80px;
-    height: 200px;
 }
 
 .descricao > .img-desc > img{
-  
+
     
-    height: 200px;
-    
+    height: 400px;
    
    
 }
@@ -292,40 +201,35 @@ div.vidro{
 
  
     margin-top:-12px;
-    width: 85vw;
-    margin: auto;
+    width: 40vw;
 
 }
 
 .descricao > .txt-desc > .titulo{
 
-    text-align: center;
+  
     font-size: 40pt;
     color: #ba744b;
     font-family: 'ruby';
     font-weight: normal;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .descricao > .txt-desc > .desc-produto{
 
     color: white;
-    font-size: 16pt;
-  
-    font-weight: normal;
-    text-align: center;
+    font-size: 20pt;
+    line-height: 25pt;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 
 /*FOOTER*/
 
 .interface{
 
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    
+    justify-content: space-around;
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #191413;
@@ -336,31 +240,25 @@ div.vidro{
 
 
 
-footer >.linha{
+.linha{
     
     padding: 10px;
-    width: 100vw;
-    
-    margin-bottom: 20px;
-    
 }
 
 .linha > h3{
-    text-align: center;
-    margin-top: 12px;
+
     font-family: 'lione';
     font-weight: normal;
     color: #59341b;
-    font-size: 20pt;
+    font-size: 40pt;
 }
 
 .linha > .links > a{
     display: flex;
-    text-align: center;
     padding: 15px;
     color: white;
     text-decoration: none;
-    font-size: 16pt;
+    font-size: 20pt;
     font-family: Arial, Helvetica, sans-serif;
     transition: 0.2s ease-in-out;
 }
@@ -371,28 +269,37 @@ footer >.linha{
 }
 
 .redes{
-
+    background-color: transparent;
     padding: 10px;
     margin-top: 15px;
     text-align: center;
 }
 
-.linha > .redes > a .link-rede  {
+.linha > .redes > a{
 
     
-    padding: 15px;
+    color: #754424;
     text-align: center;
-    color: white;
-    text-decoration: none;
-    font-size: 22pt;
     
-    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    
+    margin-right: 15px;
+    
     transition: 0.2s ease-in-out;
 }
 
-.linha > .redes > a> span:hover{
+.linha > .redes> a > span > i{
+
+    color: white;
+    font-size: 32pt;
+    padding: 15px;
+    transition:0.2s ease-in-out ;
+}
+
+.linha > .redes > a> span > i:hover{
 
     color: #754424;
+  
 
 }
 
@@ -401,7 +308,7 @@ footer >.linha{
     text-align: center;
     background-color: #332013;
     color: white;
-    font-size: 14pt;
+    font-size: 16pt;
     font-weight: 200px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 35px;

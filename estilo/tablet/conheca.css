@@ -19,7 +19,7 @@
     src: url(../../fontes/LeckerliOne-Regular.ttf);
 }
 
-@media  (max-width:767px) {
+@media  (min-width:768px) and (max-width:1023px){
     
 
 
@@ -276,13 +276,13 @@ div.vidro{
 .descricao > .img-desc{
     margin: auto;
     margin-top: 80px;
-    height: 200px;
+    height: 300px;
 }
 
 .descricao > .img-desc > img{
   
     
-    height: 200px;
+    height: 300px;
     
    
    
@@ -313,7 +313,7 @@ div.vidro{
     font-size: 16pt;
   
     font-weight: normal;
-    text-align: center;
+    text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
 }
 

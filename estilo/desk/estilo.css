@@ -17,7 +17,7 @@
 }
 
 
-@media  (min-width:1023px){
+@media screen and  (min-width:1023px){
     
 
 
@@ -41,7 +41,7 @@ body{
 }
 
 header{
-    
+
     background-color: #332013;
     height: 160px;
     position: fixed;
@@ -130,7 +130,7 @@ main{
 /*MENU CARDAPIO*/
 
 .cardapio{
-
+    
     background: url(../../imagens/img-section-1.jpg) no-repeat center center;
     background-size: cover;
     height: 400px;
@@ -532,28 +532,37 @@ section.cardapio2#secao4{
 }
 
 .redes{
-
+    background-color: transparent;
     padding: 10px;
     margin-top: 15px;
     text-align: center;
 }
 
-.linha > .redes > a .link-rede  {
+.linha > .redes > a{
 
     
-    padding: 15px;
+    color: #754424;
     text-align: center;
-    color: white;
+    
     text-decoration: none;
-    font-size: 32pt;
+    
     margin-right: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    
     transition: 0.2s ease-in-out;
 }
 
-.linha > .redes > a> span:hover{
+.linha > .redes> a > span > i{
+
+    color: white;
+    font-size: 32pt;
+    padding: 15px;
+    transition:0.2s ease-in-out ;
+}
+
+.linha > .redes > a> span > i:hover{
 
     color: #754424;
+  
 
 }
 
