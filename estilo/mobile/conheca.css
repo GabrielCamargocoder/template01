@@ -300,7 +300,7 @@ div.vidro{
 .descricao > .txt-desc > .titulo{
 
     text-align: center;
-    font-size: 40pt;
+    font-size: 30pt;
     color: #ba744b;
     font-family: 'ruby';
     font-weight: normal;
@@ -340,7 +340,6 @@ footer >.linha{
     
     padding: 10px;
     width: 100vw;
-    
     margin-bottom: 20px;
     
 }
@@ -356,7 +355,6 @@ footer >.linha{
 
 .linha > .links > a{
     display: flex;
-    text-align: center;
     padding: 15px;
     color: white;
     text-decoration: none;
@@ -377,20 +375,28 @@ footer >.linha{
     text-align: center;
 }
 
-.linha > .redes > a .link-rede  {
+.linha > .redes > a{
 
     
-    padding: 15px;
+ 
     text-align: center;
-    color: white;
+    color: #754424;
     text-decoration: none;
-    font-size: 22pt;
     
-    font-family: Arial, Helvetica, sans-serif;
-    transition: 0.2s ease-in-out;
+    
+
+    
 }
 
-.linha > .redes > a> span:hover{
+.linha > .redes > a > span > i{
+
+    color: white;
+    font-size: 22pt;
+    transition: 0.2s ease-in-out;
+    padding: 15px;
+}
+
+.linha > .redes > a> span > i:hover{
 
     color: #754424;
 
