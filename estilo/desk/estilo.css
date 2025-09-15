@@ -17,7 +17,7 @@
 }
 
 
-@media screen and (min-width:1023px) {
+@media screen and (min-width:1024px) {
     
 
 
@@ -134,6 +134,7 @@ main{
     background: url(../../imagens/img-section-1.jpg) no-repeat center center;
     background-size: cover;
     height: 400px;
+    width: 100%;
     margin-top: 160px;
     position: relative;
     
